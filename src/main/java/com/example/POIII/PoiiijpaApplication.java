@@ -15,6 +15,7 @@ public class PoiiijpaApplication {
 	/*  Para criação da tabela no SQL
 	CREATE TABLE Disciplina (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
     professor VARCHAR(255) NOT NULL,
     turma INT NOT NULL,
     sala INT NOT NULL,

@@ -38,6 +38,7 @@ public class DisciplinaServiceImpl implements DisciplinaService {
     @Override
     public Disciplina atualizarDisciplina(Long id, Disciplina disciplina) {
         Disciplina disciplinaExistente = buscarDisciplinaPorId(id);
+        disciplinaExistente.setNome(disciplina.getNome());
         disciplinaExistente.setProfessor(disciplina.getProfessor());
         disciplinaExistente.setTurma(disciplina.getTurma());
         disciplinaExistente.setSala(disciplina.getSala());
